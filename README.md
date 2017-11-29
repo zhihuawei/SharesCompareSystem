@@ -6,3 +6,4 @@
       2、网极科技数据需要appcode,同样的在Application/Home/Controller下Index控制器文件中的aliYunSharesApi()接口中，已标注好位置，appcode的获取方法可以访问：https://market.aliyun.com/products/57000002/cmapi022297.html?spm=5176.2020520132.101.6.yDGEm1#sku=yuncode1629700000；
       3、新浪股票数据是免费的，故不需要其他的什么设置；
       4、三个股票数据我设置的都是每秒进行请求刷新，如要修改，可在Application/Home/View/Index文件夹下的模板进行定时器的修改。
+      5、
