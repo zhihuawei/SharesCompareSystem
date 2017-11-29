@@ -4,7 +4,7 @@
     <!-- BEGIN META -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="股票数据测试对比系统,通联股票数据,新浪股票数据,阿里云股票数据">
+    <meta name="description" content="股票数据对比系统,通联股票数据,新浪股票数据,阿里云股票数据">
     <meta name="author" content="ZHIHUA·WEI">
     <meta name="version" content="1.0">
     <!-- END META -->
@@ -12,7 +12,7 @@
     <!-- BEGIN SHORTCUT ICON -->
     <link rel="shortcut icon" href="__PUBLIC__/img/ico/zhihuawei_favicon16x16.ico">
     <!-- END SHORTCUT ICON -->
-    <title>股票数据测试对比系统——ZHIHUA·WEI</title>
+    <title>股票数据对比系统——ZHIHUA·WEI</title>
 
     <!-- BEGIN STYLESHEET -->
     <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet"> <!-- bootstrap css-->
@@ -31,7 +31,7 @@
 <section id="container" class="">
     <!-- BEGIN HEADER -->
     <header class="header white-bg">
-        <a href="index.html" class="logo"><img src="__PUBLIC__/img/zhihuawei_logo.png" style="width: 50px;height: 50px">股票数据测试<span>对比系统</span></a>
+        <a href="index.html" class="logo"><img src="__PUBLIC__/img/zhihuawei_logo.png" style="width: 50px;height: 50px">股票数据<span>对比系统</span></a>
     </header>
     <!-- END HEADER -->
 
@@ -239,15 +239,10 @@
             aliyun_api_time = setTimeout('aliyun_shares_api()', 600000);
         })
     }
-    /*function test() {
-        clearTimeout(test_time);
-        alert("定时循环弹窗测试");
-        test_time = setTimeout('test()', 600000);
-    }*/
-//    test_time = setTimeout('test()', 600000);//N毫秒刷新一次，1000毫秒＝1秒
-    //wmcloud_api_time = setTimeout('wmcloud_shares_api()', 1000);//N毫秒刷新一次，1000毫秒＝1秒
-    //sina_api_time = setTimeout('sina_shares_api()', 1000);//N毫秒刷新一次，1000毫秒＝1秒
-    //aliyun_api_time = setTimeout('aliyun_shares_api()', 1000);//N毫秒刷新一次，1000毫秒＝1秒
+
+    wmcloud_api_time = setTimeout('wmcloud_shares_api()', 1000);//N毫秒刷新一次，1000毫秒＝1秒
+    sina_api_time = setTimeout('sina_shares_api()', 1000);//N毫秒刷新一次，1000毫秒＝1秒
+    aliyun_api_time = setTimeout('aliyun_shares_api()', 1000);//N毫秒刷新一次，1000毫秒＝1秒
 </script>
 <!-- END JS -->
 </body>
