@@ -75,6 +75,7 @@ class IndexController extends Controller
                 'shares_rate' => $tem_arr3[3],
             );
         }
+
         $result = array(
             'code' => 1,
             'data' => $shares_arr,
