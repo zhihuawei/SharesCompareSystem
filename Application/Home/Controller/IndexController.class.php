@@ -37,7 +37,8 @@ class IndexController extends Controller
         $paramstring = http_build_query($params);
         $uurl = $url . "?" . $paramstring;
         $method = "GET";
-        $headers = array("authorization: Bearer 23e9fe34863cc400508f02f1c628851ec92676433b694d736e38ffe4b527f59a", "cache-control: no-cache");
+        //通联账户token
+        $headers = array("authorization: Bearer 你的token", "cache-control: no-cache");
         $ret = httpRequest($uurl, $method, $postfields = null, $headers, $debug = false);
         $ret_arr = json_decode($ret,true);
         $this->ajaxReturn($ret_arr);
@@ -85,7 +86,8 @@ class IndexController extends Controller
         $host = "http://stock.api51.cn";
         $path = "/sort";
         $method = "GET";
-        $appcode = "13d26095b46e49a3a0b2865e0a8ccc86";
+        //这是在阿里云上的appcode
+        $appcode = "你的appcode";
         $headers = array();
         array_push($headers, "Authorization:APPCODE " . $appcode);
         $querys = "data_count=6&en_prod_code=000001.SZ,000421.SZ,000631.SZ,600111.SS,600271.SS,600551.SS&fields=prod_name,last_px,px_change&sort_field_name=px_change_rate&start_pos=start_pos";
